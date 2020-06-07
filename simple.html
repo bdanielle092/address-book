@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="address.css">
+    <title>Address Book</title>
+</head>
+<body>
+    <h1>Address Book</h1>
+    <article id="addressList"> 
+    <fieldset>
+        <label for="fullName">Name</label>
+        <input type="text" id="fullName" placeholder="Enter person's full name" autofocus />
+        <button id="saveEntry" class="btn">Save Name</button>
+    </fieldset>
+   
+    <fieldset>
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Enter Address" />
+        <button id="saveEntry" class="btn">Save Address</button>
+    </fieldset>
+  
+</article>
+    <h1>Favorite Thing</h1>
+    <article id=favoritePlacesList>
+        <fieldset>
+            <label for="thing">Favorite thing</label>
+            <input type="text" id="things" placeholder="Enter your favorite thing" />
+            <button id="saveEntry" class="btn">Save to wishlist</button>
+        </fieldset>
+      
+        <fieldset>
+            <label for="storeLocation">Store Location</label>
+            <input type="text" id="storeLocation" placeholder="Enter store location" />
+            <button id="saveEntry" class="btn">Save Location</button>
+        </fieldset>
+        
+      
+    </article>
+
+    <script src="address.js"></script>
+</body>
+</html>
