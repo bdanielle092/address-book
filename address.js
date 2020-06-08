@@ -1,35 +1,4 @@
-// let addressBook = [
-//     {
-//         name: "Faith Magras",
-//         address: "134 cape ln ",
-//         thing: "dog toy",
-//         storeLocation: "tj max"
-//     },
-//     {
-//         name: "Grace Hardin",
-//         address: "235 yellowbrook dr.",
-//         thing: "water bollons",
-//         storeLocation: "big lots"
-//     },
-//     {
-//         name: "Brenda Barker",
-//         address: "487 rock ln",
-//         thing: "plates",
-//         storeLocation: "target"
-//     },
-// ]
 
-
-// Some starter code
-// addressBook = () => {
-//     // for(const currentAddressObject of ) {
-//         const addressHTML = addressCoverter(currentAddressObject)
-
-//         const addressArticleElment = document.querySelector("#addressList")
-//         addressArticleElment.innerHTML += addressHTML
-
-//     }
-// // }
 const container = document.querySelector("#container")
 
 document.querySelector("#saveEntry").addEventListener("click", event => {
@@ -51,9 +20,12 @@ document.querySelector("#saveEntry").addEventListener("click", event => {
           ${personAddress}
         </section>
     `
+    // makes sure both fields are filled
 document.querySelector("#fullName").value = ""
 document.querySelector("#address").value = ""
+// makes the cursor go to the first entry 
 document.querySelector("#fullName").focus()
+// alerts user if they didn't fill both entry
     }else{
         alert("Enter all information.")
     }
@@ -77,9 +49,12 @@ document.querySelector("#saveToWishList").addEventListener("click", event => {
           ${storeLocation}
         </section>
     `
+    // makes sure both fields are filled
     document.getElementById("thing").value = ""
     document.getElementById("storeLocation").value = ""
-    document.getElementById("thing").focus()
+    // makes the cursor go to the first entry 
+   document.getElementById("thing").focus()
+//    alerts the user if they didn't fill both entry
     }else{
         alert("Enter all information.")
     }
